@@ -1,9 +1,7 @@
 ---
-layout: post
 title: 왜 Virtual DOM은 브라우저 렌더링 횟수를 줄여주는가?
-description: "Virtual DOM이란?"
-modified: 2019-02-28
-tags: [react, virtualdom]
+date: 2019-02-28
+category: 'react'
 ---
 
 리액트에서 쓰이는 Virtual DOM에 대해 이해하기 위해 여러 글과 유튜브들을 보았다.
