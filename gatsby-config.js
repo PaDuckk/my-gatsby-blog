@@ -63,7 +63,7 @@ module.exports = {
         name: metaConfig.title,
         short_name: metaConfig.title,
         start_url: `/`,
-        background_color: `#ffffff`,
+        background_color: `#007CFF`,
         theme_color: `#007CFF`,
         display: `minimal-ui`,
         icon: metaConfig.icon,
