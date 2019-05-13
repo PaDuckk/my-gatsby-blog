@@ -2,7 +2,7 @@
 layout: post
 title: Stack, Queue, Linked List 란?
 date: 2019-02-13
-category: 'data structure'
+category: 'development'
 ---
 
 우선 자료구조들을 조사해보고 구현해야 될 기능들을 정리해보았다. 수도코드를 작성 해보고 남은 자료구조 스프린트 기간동안 구현해보자

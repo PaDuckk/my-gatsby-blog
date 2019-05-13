@@ -1,7 +1,7 @@
 ---
 title: JavaScript Patterns 1장 요약
 date: 2019-01-24
-category: 'JavaScript'
+category: 'reading'
 ---
 # 1장 개요
 

@@ -1,7 +1,7 @@
 ---
 title: React Life Cycle 정리
 date: 2019-02-26
-category: 'react' 
+category: 'development' 
 ---
 
 리액트 라이프 사이클이란?

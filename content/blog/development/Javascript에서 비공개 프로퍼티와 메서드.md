@@ -1,7 +1,7 @@
 ---
 title: JavaScript에서 비공개 프로퍼티와 메서드
 date: 2019-02-03
-category: 'Javascript'
+category: 'reading'
 ---
 
 - 자바 스크립트에서는 접근제어자인 private, protected, public을 나타내는 별도의 문법이 없다. 그러나 클로저 개념을 이용해 구현 가능하다.

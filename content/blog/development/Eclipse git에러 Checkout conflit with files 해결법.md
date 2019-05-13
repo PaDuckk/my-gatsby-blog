@@ -1,9 +1,7 @@
 ---
-layout: post
 title: Eclipse git에서 Checkout confilct with files 에러시 해결 방법
-description: "Eclipse git에서 Checkout confilct with files 에러시 해결 방법"
 modified: 2019-02-24
-tags: [git, troubleshooting]
+category: 'development'
 ---
 
 > Egit으로 Pull 해 올 경우 다음과 같은 에러가 나면서 merge가 안되는 경우가 있다.

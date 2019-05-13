@@ -1,9 +1,7 @@
 ---
-layout: post
 title: N-Queens 퍼즐
-description: "N-Queens 퍼즐"
-modified: 2019-02-17
-tags: [codestates, 알고리즘]
+date: 2019-02-17
+category: 'development'
 ---
 
 ## N-Queens 문제란?

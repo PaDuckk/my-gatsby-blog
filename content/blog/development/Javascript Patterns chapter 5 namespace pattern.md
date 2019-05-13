@@ -1,7 +1,7 @@
 ---
 title: JavaScript Patterns 5.1 namespace 패턴
 date: 2019-02-03
-category: 'Javascript'
+category: 'reading'
 ---
 
 - 자바 스크립트에서 아래와 같이 선언시 전역 객체에 프로퍼티로 추가 되어 진다.
