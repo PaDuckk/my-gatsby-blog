@@ -42,7 +42,7 @@ _Virtual DOM은 뷰에 변화를 먼저 Virtual DOM에 적용시킨 후 한번�
 
 Virtual DOM이 DOM Tree의 여러가지 변경 사항이 있을경우 어떻게 렌더링 횟수를 줄여주는지 예시를 통해 설명해 보겠다.
 
-```html
+```html{7,8,9}
 <!DOCTYPE html>
 <html>
   <head> </head>
@@ -60,7 +60,7 @@ Virtual DOM이 DOM Tree의 여러가지 변경 사항이 있을경우 어떻게 
 
 위와 같은 구조를 가진 페이지가 있다고 할 경우 li노드들의 컨텐트들을 다음과 같이 바꾸고자 한다.
 
-```html
+```html{7,8,9}
 <!DOCTYPE html>
 <html>
   <head> </head>
@@ -78,7 +78,7 @@ Virtual DOM이 DOM Tree의 여러가지 변경 사항이 있을경우 어떻게 
 
 우선 비효율적으로 업데이트를 하는 경우를 보자
 
-```javascript
+```javascript{5,8,11}
 const root = document.querySelector("#root");
 const liTags = root.querySelectorAll("li");
 
@@ -98,7 +98,7 @@ liTags[2].textContent = "yellow mango";
 
 그러면 단 한번의 돔 조작으로 업데이트를 해보자.
 
-```javascript
+```javascript{19}
 const root = document.querySelector("#root");
 const virtualDOM = document.createElement("ul");
 virtualDOM.classList.add("list");
