@@ -25,7 +25,7 @@ const getCategories = async () => {
       .map(file => fs.readFileSync(file, UTF_8))
       .map(str => matter(str).data.category)
       .filter(val => !!val)
-      .map(str => str.trim().toLowerCase())
+      .map(str => str.trim())
   )
 }
 
