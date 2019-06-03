@@ -1,7 +1,7 @@
 ---
-title: 2019-05-27(mon)
+title: React Boot Camp 1일차
 date: 2019-05-27 23:05:70
-category: TIL
+category: event
 ---
 
 ## React Boot Camp 1일차
@@ -14,11 +14,13 @@ category: TIL
 - 연속적인 페이지 사이의 사용자 경험을 방해하지 않는다.
 
 ### React
-  
-- Virtual DOM 
+
+- Virtual DOM
+
   - 빠른 렌더링
 
 - Component
+
   - 높은 재사용성 & 빠른 개발
 
 - JSX (Javascritp eXtension)
@@ -28,12 +30,14 @@ category: TIL
 ### React 시작하기
 
 - CRA
+
   - 원하는 대로 설정하기 위해선 eject 해야 함, 되돌릴 수 없기 때문에 커밋 후 eject 가능하다.
 
 - next.js
+
   - SSR, CodeSpliting, HMR, 이 3가지를 도와주는 프레임 워크
   - 페이지 단위로 라우팅이 강제되는것이 단점이 될 수 있다.
-  
+
 ### Props & State
 
 - `Props`
@@ -47,7 +51,7 @@ category: TIL
   - state는 변경 가능하고 setState메서드를 사용해 변경
 
 ### JS or TS?
-  
+
 > TypeScript를 도입하여 사전에 버그를 줄이는 것에 큰 도움이 된다.
 
 - 장점
@@ -58,13 +62,13 @@ category: TIL
   - 러닝커브
 
 ### 상태 관리 `Redux` or `MobX`
-  
+
 `Redux`
 
 - Redux는 state를 관리하기 위한 거대한 이벤트 루프
 - 액션 = 이벤트
 - 리듀서 = 이벤트에 대한 반응
-  
+
 `MobX`
 
 - Mobx는 일관성 없는 상태를 만들수 없도록 상태관리를 간단하게 만듬
@@ -74,7 +78,7 @@ category: TIL
 ### 프로젝트 폴더 구성 `Components` or `Atomic`
 
 - 정답은 없다. 다양하게 시도해보고 팀원간의 의견이 맞는 방향으로 하는게 정답
-  
+
 ### React 브라우저 라우팅
 
 - 브라우저 라우팅
@@ -92,14 +96,14 @@ category: TIL
 - 소스코드의 변경이 생기더라도 현재 개발중인 App의 상태를 유지하면서 개발 가능 해 진다.
 - 사용법 : hot이라는 함수로 컴포넌트를 감싸준다. 코드스플리팅이나 어싱크하게 동작하는 경우엔 다 hot으로 감싸주어야 한다.
 - next 6버전이상에선 포함 되어있다.
-  
+
 ### 검색 엔진을 위한 SSR (Server side rendering)
 
 - 웹서비스는 검색엔진에 검색되는게 중요하다.
 - SPA는 SEO에 불리함
 - SSR 하는 이유
   - 검색엔진
-  - 소셜미디어에서 페이지가 공유 될 때 `오픈그래프`가 중요함 `썸네일`과` description`
+  - 소셜미디어에서 페이지가 공유 될 때 `오픈그래프`가 중요함 `썸네일`과`description`
   - 퍼포먼스
 - hydrate사용시 SSR 페이지 과 CSR 페이지가 다른경우 다시렌더함
   - 가장 실수 하는 경우
@@ -141,15 +145,17 @@ category: TIL
 ### 질문
 
 - 배포
+
   - 리액트의 렌더가 스트림으로 이제 렌더가됨.
   - 노드인스턴스는 싱글 프로세스 싱크하게 동작하는 코드에서는 블락이 생김
   - API랑은 분리하는게 좋다.
   - SSR에서 렌더프로세스가 여러개 띄울수있게해야 확장성에서 좋다.
 
 - MobX
+
   - mobX는 런타임에도 타입체크 가능하다는 장점이 있다.
   - 리덕스에선 리듀서 잘못 짤 경우 스토어가 아예 깨질 수 있다.
-  
+
 - 컨텍스트
   - 뮤터블하고 스파게티 코드가 되기 쉽다.
   - 금방 복잡해지고 더러워짐
