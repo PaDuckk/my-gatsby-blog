@@ -1,5 +1,5 @@
 ---
-title: react-boot-camp-5일차
+title: React Boot Camp 5일차
 date: 2019-06-04 12:06:56
 category: event
 ---

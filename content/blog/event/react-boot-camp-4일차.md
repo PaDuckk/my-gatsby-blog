@@ -1,5 +1,5 @@
 ---
-title: react-boot-camp-4일차
+title: React Boot Camp 4일차
 date: 2019-06-03 16:06:56
 category: event
 ---
@@ -103,7 +103,7 @@ function safe(f) {
 - 아직 RestAPI에 비해 어떠한 장점을 갖는진 명확히 이해가 가지 않았다.
 - 하지만 Component Composition과 RenderProps를 활용해 비동기 요청에 대해 loading, success, error를 핸들링하는 부분은 상태관리 라이브러리에 미들웨어를 적용해 처리하는 과정보다 매우 편리해 보였다.
 
-  ```javascript
+  ```javascript{15,16,17,18,19,20,21,22,23,24,25,26}
   import React from 'react'
   import { Query } from 'react-apollo'
   import { gql } from 'apollo-boost'
