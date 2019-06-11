@@ -8,7 +8,6 @@ category: 'development'
 하지만 이해가 가지 않았다. Virtrual DOM이 무엇이고 그래서 어떠한 원리로 좋다는 것인지.
 포기하기 보다 끝까지 공부하고 조사해보았다.
 
-
 ![](./images/browser-workflow.JPG)
 
 글을 진행 하기 앞서 브라우저 렌더링에 대해 잠시 설명이 필요할 것 같다.
@@ -79,17 +78,17 @@ Virtual DOM이 DOM Tree의 여러가지 변경 사항이 있을경우 어떻게 
 우선 비효율적으로 업데이트를 하는 경우를 보자
 
 ```javascript{5,8,11}
-const root = document.querySelector("#root");
-const liTags = root.querySelectorAll("li");
+const root = document.querySelector('#root')
+const liTags = root.querySelectorAll('li')
 
 // 화면 렌더링 발생 1
-liTags[0].textContent = "red apple";
+liTags[0].textContent = 'red apple'
 
 // 화면 렌더링 발생 2
-liTags[1].textContent = "yellow banana";
+liTags[1].textContent = 'yellow banana'
 
 // 화면 렌더링 발생 3
-liTags[2].textContent = "yellow mango";
+liTags[2].textContent = 'yellow mango'
 ```
 
 다음과 같이 하나의 업데이트마다 뷰의 변화가 생기면 그 때 마다 브라우저는 다시 화면을 그리는 계산을 하고 이 부분이 잦은 돔조작으로 생기는 성능의 병목점이 된다.
@@ -99,26 +98,28 @@ liTags[2].textContent = "yellow mango";
 그러면 단 한번의 돔 조작으로 업데이트를 해보자.
 
 ```javascript{19}
-const root = document.querySelector("#root");
-const virtualDOM = document.createElement("ul");
-virtualDOM.classList.add("list");
+const root = document.querySelector('#root')
+const virtualDOM = document.createElement('ul')
+virtualDOM.classList.add('list')
 
-const appleLI = document.createElement("li");
-appleLI.textContent = "red apple";
+const appleLI = document.createElement('li')
+appleLI.textContent = 'red apple'
 
-const bananaLI = document.createElement("li");
-bananaLI.textContent = "yellow banana";
+const bananaLI = document.createElement('li')
+bananaLI.textContent = 'yellow banana'
 
-const mangoLI = document.createElement("li");
-mangoLI.textContent = "yellow mango";
+const mangoLI = document.createElement('li')
+mangoLI.textContent = 'yellow mango'
 
-virtualDOM.appendChild(appleLI);
-virtualDOM.appendChild(bananaLI);
-virtualDOM.appendChild(mangoLI);
+virtualDOM.appendChild(appleLI)
+virtualDOM.appendChild(bananaLI)
+virtualDOM.appendChild(mangoLI)
 
 // 이 때 한번 뷰가 다시 렌더링 되어 진다.
-root.replaceChild(virtualDOM, root.querySelector("ul"));
+root.replaceChild(virtualDOM, root.querySelector('ul'))
 ```
+
+> 예시를 들기 위해 사용한 코드입니다 위의 virtualDom이란 변수가 실제 VirtualDOM을 뜻하진 않습니다.
 
 위의 코드에서 replaceChild하기 전에는 자바스크립트 메모리 영역에서만 일어나는 일이므로 화면에 영향을 끼치지 않고 replaceChild할 경우에만 단 한번 화면을 그리는 계산을 하게 된다.
 
